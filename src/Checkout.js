@@ -10,7 +10,7 @@ function Checkout() {
   return (
     <div className="checkout">
         <div className="checkout__left">
-            <div className="checkout__title">Your Food Basket</div>
+            <div className="checkout__title">Food Basket</div>
             <p className="checkout__info">
                 <small>$</small>
                 <strong>(Amount) Subtotal, (Num) delicacies</strong>

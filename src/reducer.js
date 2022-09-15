@@ -5,6 +5,11 @@ export const initialState = {
 export const getBasketTotal = (basket) =>
     basket?.reduce((amount, item) => item.price + amount, 0);
 
+export const getFinalTotal = (basket) => {
+    let value = getBasketTotal(basket)
+    return value + (value * 0.0725)
+}
+
 const reducer = (state, action) => {
     switch(action.type) {
         case 'ADD_TO_BASKET':
